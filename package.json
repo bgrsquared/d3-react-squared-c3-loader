@@ -1,6 +1,6 @@
 {
   "name": "d3-react-squared-c3-loader",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Load c3 charts in d3-react-squared",
   "main": "./dist/d3-react-squared-c3-loader.js",
   "scripts": {
