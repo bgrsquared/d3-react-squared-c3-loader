@@ -1,3 +1,17 @@
-import c3container from './CoreComponent/c3container';
+import {bindActionCreators} from 'redux';
+import {connect} from 'react-redux';
+import * as ChartActions from './actions/ChartActions';
 
-export default c3container;
+import C3Component from './CoreComponent/c3component';
+
+function mapStateToProps(state) {
+  return {
+    eventData: state.d3ReactSquared,
+  };
+}
+
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators(ChartActions, dispatch);
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(C3Component);

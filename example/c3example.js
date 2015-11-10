@@ -33,7 +33,7 @@ export default class C3Example extends Component {
   dr2legend() {
     return {
       item: {
-        onmouseover: (id) => {
+        onmouseover: function mouseover(id) {
           const eventObj = {
             data: {id},
             event: 'mouseover',
@@ -41,7 +41,7 @@ export default class C3Example extends Component {
           };
           this.api.setEvent(eventObj);
         },
-        onmouseout: (id) => {
+        onmouseout: function mouseout(id) {
           const eventObj = {
             data: {id},
             event: 'mouseout',
@@ -77,6 +77,26 @@ export default class C3Example extends Component {
         data: {
           columns: this.fakeC3LineData(),
           type: 'spline',
+          /*
+          // This is how you would set a mouseevent, but depends a lot on chart type...
+          onmouseover: function mouseover(id) {
+            console.log(id);
+            const eventObj = {
+              data: {id: id.id},
+              event: 'mouseover',
+              eventGroup: this.highlightEmit,
+            };
+            this.setEvent(eventObj);
+          },
+          onmouseout: function mouseout(id) {
+            const eventObj = {
+              data: {id: id.id},
+              event: 'mouseout',
+              eventGroup: this.highlightEmit,
+            };
+            this.setEvent(eventObj);
+          },
+          */
         },
         legend: this.dr2legend(),
       },
