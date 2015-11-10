@@ -39,8 +39,7 @@ Huge thanks to all the people involved in providing awesome tools such as:
 * [D3](http://d3js.org)
 * [webpack](http://webpack.github.io)
 * [BabelJS](https://babeljs.io)
-* [Reflux (no longer using it, thanks anyway!)](https://github.com/spoike/refluxjs)
-* [redux (replaces Reflux)](https://github.com/rackt/redux)
+* [redux](https://github.com/rackt/redux)
 * [c3.js](http://c3js.org)
 
 and many others...
