@@ -45,5 +45,8 @@ Huge thanks to all the people involved in providing awesome tools such as:
 and many others...
 
 # Version Updates:
+0.0.2:
+- Fix example.
+
 0.0.1:
 - Init the project.
