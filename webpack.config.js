@@ -40,6 +40,8 @@ switch (process.env.NODE_ENV) {
         'react-dom': 'react-dom',
         'd3': 'd3',
         'c3': 'c3',
+        'redux': 'redux',
+        'react-redux': 'react-redux',
       }
     ];
     break;
